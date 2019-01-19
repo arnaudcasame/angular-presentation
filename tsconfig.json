@@ -67,6 +67,9 @@
       ],
       "@codelab/code-demos": [
         "libs/code-demos/src/index.ts"
+      ],
+      "@angular-presentation/firebase-login": [
+        "libs/firebase-login/src/index.ts"
       ]
     },
     "typeRoots": [
