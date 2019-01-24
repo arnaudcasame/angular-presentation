@@ -15,6 +15,7 @@ import { SlidesModule } from '../../../../../../../libs/slides/src';
 
 import { TypescriptSvgComponent } from './typescript-svg/typescript-svg.component';
 import { PresentationModule } from '../../../../../../../libs/presentation/src';
+import { FirebaseLoginModule } from '../../../../../../../libs/firebase-login/src';
 
 const routes = RouterModule.forChild(
   [
@@ -36,7 +37,7 @@ const routes = RouterModule.forChild(
     CommonModule,
     FormsModule,
     BrowserWindowModule,
-
+    FirebaseLoginModule,
     CodelabComponentsModule,
     FormsModule,
     

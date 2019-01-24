@@ -15,6 +15,7 @@ import { NxModule } from '@nrwl/nx';
 import { FeedbackModule } from '../../../../../libs/feedback/src/lib/feedback.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SlidesModule } from '../../../../../libs/slides/src';
+import { AngularFireModule } from '@angular/fire';
 
 export let routes = [
   {
@@ -150,7 +151,8 @@ if (environment.production) {
     RouterModule.forRoot(routes),
     TooltipsModule,
     FeedbackModule,
-    NxModule.forRoot()
+    NxModule.forRoot(),
+    AngularFireModule.initializeApp(environment.firebaseConfig)
   ],
   providers: [
     {
